@@ -1893,7 +1893,7 @@ Continue with DD?
     esac
 
     # debian/kali <=256M 必须使用云内核，否则不够内存
-    if is_distro_like_debian && ! is_in_windows && [ "$ram_size" -le 256 ]; then
+    if is_distro_like_debian && ! is_in_windows && [ "$ram_size" -le 188 ]; then
         exit_if_cant_use_cloud_kernel
     fi
 
